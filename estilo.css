@@ -1,0 +1,192 @@
+body{
+	background-color: #f4f5f5;
+}
+
+a:hover, a:focus{
+	text-decoration: none;
+}
+
+/*=== CONTEÚDO TOPO ===*/
+
+.conteudo_topo{
+	width: 100%;
+	height: 200px;
+	border: 1px solid red;
+}
+
+.nav_topo{
+	width: 100%;
+	height: 40px;
+	background: #333132;
+	color: white;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	
+}
+
+.header_topo{
+	width: 100%;
+	height: 160px;
+	font-family: Roboto Medium;
+	font-size: 60px;
+	color: white;
+	background-color: #4a6322;
+	border: 1px solid blue;
+	display: flex;
+	align-items: center;
+	
+}
+
+/*=== CONTEÚDO CORPO ===*/
+
+#titulo_texto_corpo{
+	font-size: 20px;
+	color: black;
+	margin-top: 30px;
+	position: relative;
+}
+
+.unidade{
+	display: flex;
+	align-items: center;
+	margin-bottom: 2px;
+}
+
+.numero_unidade{
+	background-color: white;
+	width: 30px;
+	height: 30px;
+	color: #4a6322;
+	border-radius: 90px 90px 90px 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	position: absolute;
+}
+
+.numero_unidade2{
+	width: 38px;
+	height: 38px;
+	border-radius: 90px 90px 90px 90px;
+	background-color: #4a6322;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	margin-left: 10px;
+	z-index: 1;
+}
+
+.nav-tabs.nav-justified > li > a.refe_unidade, .nav-tabs.nav-justified > li.active > a.refe_unidade{
+	color: white;
+	display: flex;
+	align-items: center;
+	border-radius: 90px 0px 0px 90px;
+	background-color: #677B46;
+	height: 38px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+	border: none;
+	transition: all 1s linear;
+}
+
+#refe_unidade_conteudo{
+
+	background-color: #4a6322;
+}
+
+.titulo_unidade{
+	color: white;
+	width: 300px;
+	min-height: 38px;
+	border: 0px solid red;
+	font-size: 20px;
+	margin-left:10px;
+	display: flex;
+	align-items: center;
+	margin-left: 30px;
+	text-align: left;
+}
+
+.botoes_unidade_right{
+	right: 30px;
+	position: absolute;
+}
+
+#margin_botoes{
+	margin-left: 10px;
+}
+
+/*=========================*/
+
+.topico{
+	display: flex;
+	align-items: center;
+}
+
+.nav-tabs.nav-stacked > li > a.refe_topico,.nav-tabs.nav-stacked > li.active > a.refe_topico{
+	display: flex;
+	align-items: center;
+	color: #333132;
+	font-weight: bold;
+	background-color: #ecf4df;
+	border: none;
+	margin-left: 35px;
+	margin-bottom: 2px;
+}
+
+.margin_titulo_topico{
+	margin-left: 20px;
+}
+
+.nav-tabs{
+	border: none;
+}
+
+/*=========================*/
+
+.nav-tabs.nav-stacked > li > a.refe_subtopico,.nav-tabs.nav-stacked > li.active > a.refe_subtopico{
+	display: flex;
+	align-items: center;
+	color: #333132;
+	background-color: white;
+	border: none;
+	margin-left: 35px;
+	margin-bottom: 2px;
+}
+
+.margin_titulo_subtopico{
+	margin-left: 50px;
+}
+
+.margin_titulo_sub_subtopico{
+	margin-left: 100px;
+}
+
+.img_absolute{
+	position: absolute;
+}
+
+/*=========================*/
+
+#soldier_posi{
+	float:right;
+	margin-top: 105px;
+}
+
+/*=== CONTEÚDO RODAPE ===*/
+
+.corpo_rodape{
+	width: 100%;
+	height: 90px;
+	background-color: #333132;
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+}
+
+.margem_img_rodape{
+	margin-right: 30px;
+}
