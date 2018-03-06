@@ -34,7 +34,6 @@ a:hover, a:focus{
 	display: flex;
 	align-items: center;
 	box-shadow: 1px 1px 25px #000;
-	border: 1px solid red;
 	
 }
 
