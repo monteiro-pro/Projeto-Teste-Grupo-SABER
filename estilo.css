@@ -11,7 +11,6 @@ a:hover, a:focus{
 .conteudo_topo{
 	width: 100%;
 	height: 200px;
-	border: 1px solid red;
 }
 
 .nav_topo{
@@ -32,13 +31,21 @@ a:hover, a:focus{
 	font-size: 60px;
 	color: white;
 	background-color: #4a6322;
-	border: 1px solid blue;
 	display: flex;
 	align-items: center;
+	box-shadow: 1px 1px 25px #000;
+	border: 1px solid red;
 	
 }
 
+#botao_menu{
+	margin-bottom: 50px;
+}
+/*////=======================*/
+
 /*=== CONTEÚDO CORPO ===*/
+
+/*======= Col md left ===============*/
 
 #titulo_texto_corpo{
 	font-size: 20px;
@@ -66,7 +73,7 @@ a:hover, a:focus{
 	position: absolute;
 }
 
-.numero_unidade2{
+.numero_unidade_back{
 	width: 38px;
 	height: 38px;
 	border-radius: 90px 90px 90px 90px;
@@ -77,19 +84,6 @@ a:hover, a:focus{
 	position: absolute;
 	margin-left: 10px;
 	z-index: 1;
-}
-
-.nav-tabs.nav-justified > li > a.refe_unidade, .nav-tabs.nav-justified > li.active > a.refe_unidade{
-	color: white;
-	display: flex;
-	align-items: center;
-	border-radius: 90px 0px 0px 90px;
-	background-color: #677B46;
-	height: 38px;
-	margin-left: 10px;
-	margin-bottom: 2px;
-	border: none;
-	transition: all 1s linear;
 }
 
 #refe_unidade_conteudo{
@@ -119,46 +113,94 @@ a:hover, a:focus{
 	margin-left: 10px;
 }
 
-/*=========================*/
+.nav-tabs{
+	border: none;
+}
+
+.nav-tabs.nav-justified > li > a.refe_unidade, .nav-tabs.nav-justified > li.active > a.refe_unidade{
+	color: white;
+	display: flex;
+	align-items: center;
+	border-radius: 90px 0px 0px 90px;
+	background-color: #677B46;
+	height: 38px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+	border: none;
+	transition: all 1s linear;
+}
+
+/*===== Sub tópico ======*/
 
 .topico{
 	display: flex;
 	align-items: center;
 }
 
-.nav-tabs.nav-stacked > li > a.refe_topico,.nav-tabs.nav-stacked > li.active > a.refe_topico{
+.visualizacao_topico{
+	right: 15px;
+	position: absolute;
 	display: flex;
 	align-items: center;
-	color: #333132;
-	font-weight: bold;
-	background-color: #ecf4df;
-	border: none;
-	margin-left: 35px;
-	margin-bottom: 2px;
+}
+
+.form_visualizacao{
+	text-align: right;
+	font-size: 15px;
+	line-height: 0.8;
+	padding-right: 10px;
+}
+
+.form_data_topico{
+	font-size: 10px;
 }
 
 .margin_titulo_topico{
 	margin-left: 20px;
 }
 
-.nav-tabs{
-	border: none;
-}
-
-/*=========================*/
-
-.nav-tabs.nav-stacked > li > a.refe_subtopico,.nav-tabs.nav-stacked > li.active > a.refe_subtopico{
+.nav-tabs.nav-stacked > li > a.refe_topico,.nav-tabs.nav-stacked > li.active > a.refe_topico{
 	display: flex;
 	align-items: center;
 	color: #333132;
-	background-color: white;
+	font-weight: 900;
+	font-size: 15px;
+	background-color: #ecf4df;
 	border: none;
 	margin-left: 35px;
 	margin-bottom: 2px;
+	width: 100%;
 }
+
+.nav-tabs.nav-stacked > li{
+	display: flex;
+	width: 100%;
+	
+}
+.nav-tabs.nav-stacked > li > a{
+	display: flex;
+	width: 100%;
+	
+}
+
+.nav-tabs.nav-stacked > li > a#form_comentarios{
+	align-items: center;
+	color: rgba(0,0,0,0.3);
+	font-weight: bold;
+	font-size: 20px;
+	width: 50px;
+	text-align: center;
+	background-color: #ebeaea;
+	line-height: 0.8;
+	
+}
+/*//====*/
+
+/*===== Tópico do sub tópico ======*/
 
 .margin_titulo_subtopico{
 	margin-left: 50px;
+	font-weight: bold;
 }
 
 .margin_titulo_sub_subtopico{
@@ -169,12 +211,27 @@ a:hover, a:focus{
 	position: absolute;
 }
 
-/*=========================*/
+.nav-tabs.nav-stacked > li > a.refe_subtopico,.nav-tabs.nav-stacked > li.active > a.refe_subtopico{
+	display: flex;
+	align-items: center;
+	color: #333132;
+	background-color: white;
+	border: none;
+	margin-left: 35px;
+	margin-bottom: 2px;
+}
+/*//====*/
+/*//========*/
+
+/*======= Col md rigth ===============*/
 
 #soldier_posi{
 	float:right;
 	margin-top: 105px;
-}
+} 
+
+/*//========*/
+/*////=======================*/
 
 /*=== CONTEÚDO RODAPE ===*/
 
@@ -189,4 +246,19 @@ a:hover, a:focus{
 
 .margem_img_rodape{
 	margin-right: 30px;
+}
+/*////=======================*/
+
+/*#### Media queries ####*/
+
+@media screen and (max-width: 767px) {
+
+	#soldier_posi{
+		float: none;
+	}
+
+	.header_topo{
+		font-size: 40px;
+		text-align: center;
+	}
 }
